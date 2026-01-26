@@ -4,17 +4,17 @@
   "description": "Secure automated rent reclaim bot for Kora node operators on Solana",
   "main": "dist/index.js",
   "scripts": {
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "dev": "ts-node src/index.ts",
-  "monitor": "ts-node src/index.ts --mode=monitor",
-  "reclaim": "ts-node src/index.ts --mode=reclaim",
-  "report": "ts-node src/index.ts --mode=report",
-  "dry-run": "ts-node src/index.ts --mode=reclaim --dry-run",
-  "test": "jest",
-  "test:coverage": "jest --coverage",
-  "test:watch": "jest --watch"
-},
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "monitor": "ts-node src/index.ts --mode=monitor",
+    "reclaim": "ts-node src/index.ts --mode=reclaim",
+    "report": "ts-node src/index.ts --mode=report",
+    "dry-run": "ts-node src/index.ts --mode=reclaim --dry-run",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
   "dependencies": {
     "@solana/spl-token": "^0.4.0",
     "@solana/web3.js": "^1.95.0",
@@ -26,12 +26,13 @@
     "winston": "^3.11.0"
   },
   "devDependencies": {
-  "@types/node": "^20.11.0",
-  "@types/cron": "^2.4.0",
-  "@types/jest": "^29.5.11",
-  "typescript": "^5.3.0",
-  "ts-node": "^10.9.2",
-  "jest": "^29.7.0",
-  "ts-jest": "^29.1.0"
-}
+    "@types/cron": "^2.4.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.0",
+    "@types/sql.js": "^1.4.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  }
 }
