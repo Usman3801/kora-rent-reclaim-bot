@@ -1,0 +1,32 @@
+{
+  "name": "kora-rent-reclaim-bot",
+  "version": "1.0.0",
+  "description": "Secure automated rent reclaim bot for Kora node operators on Solana",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "monitor": "ts-node src/index.ts --mode=monitor",
+    "reclaim": "ts-node src/index.ts --mode=reclaim",
+    "report": "ts-node src/index.ts --mode=report",
+    "dry-run": "ts-node src/index.ts --mode=reclaim --dry-run"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^5.0.0",
+    "commander": "^12.0.0",
+    "cron": "^3.1.0",
+    "dotenv": "^16.4.0",
+    "sql.js": "^1.10.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cron": "^2.4.0",
+    "@types/node": "^20.11.0",
+    "@types/sql.js": "^1.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  }
+}
